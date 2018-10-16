@@ -1,4 +1,4 @@
-## An h2 header
+## Simple React Webpage
 
 This is a react app with the following features:
 
@@ -6,4 +6,4 @@ This is a react app with the following features:
 2.  Props
 3.  Styling
 
-Note again how the actual text starts at 4 columns in Here's a code sample:
+Here's a code sample:
