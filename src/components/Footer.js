@@ -78,7 +78,7 @@ class Footer extends Component {
             </div>
           </div>
           <div className="totop">
-            <a href="#">
+            <a href="#a">
               <i className="fas fa-arrow-up" />
             </a>
           </div>

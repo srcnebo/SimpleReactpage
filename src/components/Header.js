@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import HeaderImage from "../../src/assets/Header-img.png";
+import Cta from "./Cta";
 
 class Header extends Component {
   render() {
+    const ctaActualText = (
+      <span>
+        Create a <span className="changetext">powerful</span> solution now!{" "}
+      </span>
+    );
     return (
       <header>
         <div className="hero container">
           <div className="hero-image">
-            <img src={HeaderImage} alt="header-image" />
+            <img src={HeaderImage} alt="header-img" />
           </div>
 
           <div className="hero-copy">
@@ -22,29 +28,31 @@ class Header extends Component {
             </p>
 
             <div className="hero-buttons">
-              <a href="#" className="button">
+              <a href="#top" className="button">
                 Learn More
               </a>
             </div>
           </div>
         </div>
-
-        <div className="cta container">
-          <div className="cta-copy">
-            <p>
-              Create a <span className="changetext">powerful</span> solution
-              now!
-            </p>
-          </div>
-
-          <div className="cta-button">
-            <a href="#" className="button button-white">
-              Get Started
-            </a>
-          </div>
-        </div>
+        <Cta ctaText={ctaActualText} buttonText="Get Started" />
       </header>
     );
   }
 }
 export default Header;
+
+{
+  /* <div className="cta container">
+          <div className="cta-copy">
+            <p>
+              
+            </p>
+          </div>
+
+          <div className="cta-button">
+            <a href="#top" className="button button-white">
+              Get Started
+            </a>
+          </div>
+        </div> */
+}
