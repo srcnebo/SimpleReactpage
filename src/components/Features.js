@@ -1,8 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Features = ({ title, ReadMore }) => (
+const Features = ({ title, ReadMore, icon }) => (
   <div className="feature-item">
-    <i className="fas fa-mobile-alt" />
+    <i>
+      <FontAwesomeIcon icon={icon} />
+    </i>
     <h4>{title}</h4>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas velit

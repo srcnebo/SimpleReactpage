@@ -8,6 +8,17 @@ import BreakBox from "./components/BreakBox";
 import Testimonial from "./components/Testimonial";
 import DevTabs from "./components/DevTabs";
 import Cta from "./components/Cta";
+import {
+  faFacebook,
+  faTwitter,
+  faWeebly
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faDesktop,
+  faMobile,
+  faLaptop,
+  faRecycle
+} from "@fortawesome/free-solid-svg-icons";
 
 import "./App.css";
 
@@ -21,10 +32,26 @@ class App extends Component {
 
           <div className="container">
             <div className="features">
-              <Features title="Feature 1" ReadMore="Read More" />
-              <Features title="Feature 2" ReadMore="Read More" />
-              <Features title="Feature 3" ReadMore="Read More" />
-              <Features title="Feature 4" ReadMore="Read More" />
+              <Features
+                title="Feature 1"
+                ReadMore="Read More"
+                icon={faMobile}
+              />
+              <Features
+                title="Feature 2"
+                ReadMore="Read More"
+                icon={faDesktop}
+              />
+              <Features
+                title="Feature 3"
+                ReadMore="Read More"
+                icon={faLaptop}
+              />
+              <Features
+                title="Feature 4"
+                ReadMore="Read More"
+                icon={faRecycle}
+              />
             </div>
           </div>
           <div className="container">
